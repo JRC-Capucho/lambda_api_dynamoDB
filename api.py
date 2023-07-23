@@ -22,8 +22,8 @@ def lambda_handler(event, context):
     datas = []
     
     for chunk in data:
-        temp = chunk['device_data']['Temperature']
-        humi = chunk['device_data']['Humidity']
+        temp = chunk['device_data']['Temperatura']
+        humi = chunk['device_data']['Umidade']
         res = {
             "time": chunk['time'],
             "id": chunk['id'],
